@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    box-sizing: border-box;
+    display: grid;
+    width: 200px;
+    text-align: center;
+}
+
+.celsius, .submit, .fahrenheit{
+    margin: 10px;
+}
+
+.submit {
+    padding: 15px;
+}
+
+.celsius, .fahrenheit {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    outline: none;
+}

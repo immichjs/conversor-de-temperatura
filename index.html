@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/css/style.css">
     <title>Conversor de temperatura</title>
 </head>
-<body>
+<body id="app">
     <div id="container">
-        <section id="secFirst">
-            <span>Temperatura em Celsius (°C)</span>
+        <section>
+            <h1>Conversor de Temperatura</h1>
+            <span>Grau Celsius ( °C )</span>
             <input type="text" class="celsius" id="celsius">
+            <span>Grau Fahrenheit ( °F )</span>
+            <input type="text" class="fahrenheit" id="fahrenheit" disabled draggable="false">
             <input type="submit" value="Calcular" class="submit" id="btn">
-            <span>Temperatura em Fahrenheit (°F)</span>
-            <input type="text" class="fahrenheit" id="fahrenheit">
         </section>
     </div>
     <script src="src/js/script.js"></script>

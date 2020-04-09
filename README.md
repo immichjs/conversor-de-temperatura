@@ -4,7 +4,7 @@
 
 ## Features
 
-[x] Conversor de fahrenheit.
+[x] Conversor de fahrenheit.\n
 [x] Desabilitar o botão de converter quando iniciar a aplicação.
 [x] Icon
 [] Adicionar um conversor pra Kelvin.

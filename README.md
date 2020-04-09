@@ -2,6 +2,6 @@
 
 - No momento ele só converte Celsius para Fahrenheit, mas em breve outros tipos serão implementados
 
-[x] Fahrenheit
+[ X ] Fahrenheit
 
 [ ] Kelvin

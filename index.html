@@ -1,20 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://image.flaticon.com/icons/svg/143/143780.svg">
     <link rel="stylesheet" href="src/css/style.css">
-    <title>Conversor de temperatura</title>
+    <title>Conversor de Temperatura</title>
 </head>
 <body id="app">
     <div id="container">
         <section>
             <h1>Conversor de Temperatura</h1>
             <h3>Grau Celsius ( °C )</h3>
-            <input type="text" class="celsius" id="celsius">
+            <input type="text" class="celsius" id="celsius" spellcheck=”false”>
             <h3>Grau Fahrenheit ( °F )</h3>
-            <input type="text" class="fahrenheit" id="fahrenheit" disabled draggable="false">
+            <input type="text" class="fahrenheit" id="fahrenheit" disabled draggable="false" spellcheck=”false”>
+            <img src="https://image.flaticon.com/icons/svg/143/143812.svg" alt="copy" draggable="false" id="clipboard" onclick="myFunction()">
             <input type="submit" class="submit" id="btn">
         </section>
     </div>

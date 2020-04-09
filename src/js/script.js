@@ -5,6 +5,7 @@ const submit = document.getElementById('btn')
 
 celsius.value = 0
 fahrenheit.value = `${32} °F`
+submit.value = 'Converter'
 
 submit.onclick = () => {
     const resultF = (celsius.value * 9/5) + 32

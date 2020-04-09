@@ -4,9 +4,10 @@
 
 ## Features
 
-[x] Conversor de fahrenheit.\n
-[x] Desabilitar o botão de converter quando iniciar a aplicação.
-[x] Icon
-[] Adicionar um conversor pra Kelvin.
-[] Adicionar botões pra fahrenheit, kelvin ou celsius de acordo com o usuário quer.
-[] Simular um pop-up de resultado.
+[x] Conversor de fahrenheit. <br/>
+[x] Desabilitar o botão de converter quando iniciar a aplicação.<br/>
+[x] Icon.<br/>
+[] Adicionar um conversor pra Kelvin.<br/>
+[] Adicionar botões pra fahrenheit, kelvin ou celsius de acordo com o usuário quer.<br/>
+[] Simular um pop-up de resultado.<br/><br/>
+

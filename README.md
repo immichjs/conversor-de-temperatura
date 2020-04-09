@@ -1,3 +1,3 @@
 # Conversor de temperatura
 
-![Image description](https://imgur.com/a/vUfjavL)
+![Image description](https://i.imgur.com/qtzgz2u.png)

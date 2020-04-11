@@ -18,9 +18,9 @@ submit.onclick = () => {
     const resultF = (celsius.value * 9/5) + 32
     if (celsius.value === '' || isNaN(resultF)) {
             fahrenheit.value = 'Valor inválido'
-            celsius.value = 'Valor Obrigatório' 
+            celsius.value = 'Valor obrigatório' 
     } else {
-        resultF ? fahrenheit.value = `${resultF} °F` : 'Valor inválido'
+        fahrenheit.value = `${resultF} °F`
     }
 }
 
@@ -34,7 +34,7 @@ body.addEventListener('keyup', (e) => {
 clipboard.onclick = () => {
     fahrenheit.select()
     document.execCommand('copy')
-    clipboardLegend.innerHTML = `Copiado: ${fahrenheit.value}`
+    clipboardLegend.innerHTML = 'Copiado'
 }
 
 clipboard.onmouseout = () => {

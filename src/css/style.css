@@ -46,6 +46,31 @@ body {
     cursor: text;
 }
 
+.clipboard {
+    position: absolute;
+    top: 62.5%;
+    left: 80%;
+}
+  
+.clipboard .clipboardText {
+    position: absolute;
+    visibility: visible;
+    background-color: rgba(0, 0, 0, .1);
+    color: #fff;
+    padding: 5px;
+    font-size: 13px;
+    border-radius: 6px;
+    left: 186%;
+    top: -15%;
+    opacity: 0;
+    text-align: center;
+    transition: opacity .2s;
+}
+.clipboard:hover .clipboardText {
+    visibility: visible;
+    opacity: 1;
+}
+
 h1 {
     margin: 0 0 50px;
     color: #fff;
@@ -99,30 +124,3 @@ section img {
 section img:hover {
     transform: scale(1.05)
 }
-
-.clipboard {
-    position: absolute;
-    display: inline-block;
-    top: 60%;
-    left: 80%;
-  }
-  
-.clipboard .clipboardText {
-    position: absolute;
-    visibility: visible;
-    font-size: 12px;
-    background-color: rgba(0, 0, 0, .1);
-    color: #fff;
-    padding: 6px;
-    bottom: 170%;
-    left: -100%;
-    border-radius: 6px;
-    opacity: 0;
-    text-align: center;
-    transition: opacity .2s;
-  }
-  
-  .clipboard:hover .clipboardText {
-    visibility: visible;
-    opacity: 1;
-  }

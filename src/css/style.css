@@ -1,7 +1,7 @@
 body {
+    background-color: #40375c;
     margin: 0;
     padding: 0;
-    background-color: #40375c;
     height: 100vh;
     font-family: 'Montserrat', sans-serif;
 }
@@ -14,30 +14,30 @@ body {
 #container section {
     position: relative;
     display: grid;
+    background-color: #5a4f7c;
     width: 400px;
+    margin: auto auto;
     padding: 50px 60px;
     border-radius: 5px;
-    text-align: center;
-    background-color: #5a4f7c;
-    margin: auto auto;
-    align-items: center;
     box-shadow: 0px 0px 16px -5px rgba(0, 0, 0, .2);
+    text-align: center;
+    align-items: center;
 }
 
 .celsius, .submit, .fahrenheit {
+    color: rgba(255, 255, 255, 0.9);
     border: none;
     border-radius: 6px;
-    color: rgba(255, 255, 255, 0.9);
     outline: none;
 }
 
 .celsius, .fahrenheit {
+    background-color: rgba(255, 255, 255, .03);
     width: 90%;
     margin: 10px auto;
     padding: 10px;
-    text-align: center;
     font-size: 17px;
-    background-color: rgba(255, 255, 255, .03);
+    text-align: center;
     box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, .1);
 }
 
@@ -47,32 +47,32 @@ body {
 }
 
 h1 {
+    margin: 0 0 50px;
     color: #fff;
-    text-transform: uppercase;
+    font-size: 19px;
     letter-spacing: 3px;
     word-spacing: 2px;
-    margin: 0 0 50px;
-    font-size: 19px;
+    text-transform: uppercase;
     text-shadow: 0px 0px 16px rgba(0, 0, 0, .3);
 }
 
 section h3 {
+    margin: 5px 0 0;
     color: rgba(255, 255, 255, .9);
     font-size: 16px;
     font-weight: 400;
-    margin: 5px 0 0;
 }
 
 .submit {
-    padding: 15px;
-    font-size: 14px;
-    cursor: pointer;
-    transition: .25s;
-    letter-spacing: 1px;
-    box-shadow: 0px 0px 16px -10px rgba(68, 67, 67, .1);
-    background-color: rgba(0, 0, 0, .1);
     width: 70%;
     margin: 15px auto 0;
+    padding: 15px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    box-shadow: 0px 0px 16px -10px rgba(68, 67, 67, .1);
+    transition: .25s;
+    background-color: rgba(0, 0, 0, .1);
+    cursor: pointer;
 }
 
 .submit:hover {
@@ -84,20 +84,45 @@ section h3 {
 }
 
 section img {
+    position: relative;
+    background: none;
     width: 20px;
     height: 20px;
     padding: 0;
-    outline: none;
-    user-select: none;
-    background: none;
     border: none;
-    cursor: pointer;
-    position: relative;
-    top: -40px;
-    left: 360px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, .1);
+    outline: none;
+    cursor: pointer;
+    user-select: none;
 }
 
 section img:hover {
     transform: scale(1.05)
 }
+
+.clipboard {
+    position: absolute;
+    display: inline-block;
+    top: 60%;
+    left: 80%;
+  }
+  
+.clipboard .clipboardText {
+    position: absolute;
+    visibility: visible;
+    font-size: 12px;
+    background-color: rgba(0, 0, 0, .1);
+    color: #fff;
+    padding: 6px;
+    bottom: 170%;
+    left: -100%;
+    border-radius: 6px;
+    opacity: 0;
+    text-align: center;
+    transition: opacity .2s;
+  }
+  
+  .clipboard:hover .clipboardText {
+    visibility: visible;
+    opacity: 1;
+  }

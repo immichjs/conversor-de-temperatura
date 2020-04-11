@@ -2,6 +2,8 @@ const body = document.getElementById('app')
 const celsius = document.getElementById('celsius')
 const fahrenheit = document.getElementById('fahrenheit')
 const submit = document.getElementById('btn')
+const clipboard = document.getElementById('clipboardButton')
+const clipboardLegend = document.getElementById('clipboardLegend')
 
 celsius.value = 0
 fahrenheit.value = `${32} °F`
@@ -15,10 +17,10 @@ celsius.onclick = () => {
 submit.onclick = () => {
     const resultF = (celsius.value * 9/5) + 32
     if (celsius.value === '' || isNaN(resultF)) {
-        fahrenheit.value = 'Invalid value'
-        celsius.value = 'Required value' 
+            fahrenheit.value = 'Valor inválido'
+            celsius.value = 'Valor Obrigatório' 
     } else {
-        resultF ? fahrenheit.value = `${resultF} °F` : 'Invalid value'
+        resultF ? fahrenheit.value = `${resultF} °F` : 'Valor inválido'
     }
 }
 
@@ -29,11 +31,14 @@ body.addEventListener('keyup', (e) => {
     }
 })
 
-// Aqui ocorre um bug onde não copia o que está escrito no input.
-// Buscando soluções pra corrigir.
-function myFunction() {
-    fahrenheit.setSelectionRange(0, 99999)
+clipboard.onclick = () => {
     fahrenheit.select()
     document.execCommand('copy')
-    alert(`Grau convertido para Fahrenheit °F: ${fahrenheit.value}`)
+    clipboardLegend.innerHTML = `Copiado: ${fahrenheit.value}`
+}
+
+clipboard.onmouseout = () => {
+    setTimeout(() => {
+        clipboardLegend.innerHTML = 'Copiar'
+    }, 250)
 }

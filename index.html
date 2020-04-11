@@ -12,11 +12,16 @@
     <div id="container">
         <section>
             <h1>Conversor de Temperatura</h1>
+
             <h3>Grau Celsius ( °C )</h3>
-            <input type="text" class="celsius" id="celsius" spellcheck=”false”>
+            <input type="text" class="celsius" id="celsius">
             <h3>Grau Fahrenheit ( °F )</h3>
-            <input type="text" class="fahrenheit" id="fahrenheit" disabled draggable="false" spellcheck=”false”>
-            <img src="https://image.flaticon.com/icons/svg/143/143812.svg" alt="copy" draggable="false" id="clipboard" onclick="myFunction()">
+            <input type="text" class="fahrenheit" id="fahrenheit" readonly draggable="false">
+            
+            <div class="clipboard">
+                <img src="https://image.flaticon.com/icons/svg/143/143812.svg" alt="copy" draggable="false" id="clipboardButton" onmouseout="moveOut()">
+                <span class="clipboardText" id="clipboardLegend">Copiar</span>
+            </div>
             <input type="submit" class="submit" id="btn">
         </section>
     </div>
